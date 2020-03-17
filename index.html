@@ -1,140 +1,131 @@
-<!DOCTYPE html><html lang="en"><head><link rel="stylesheet" href="/umi.330eb719.css"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><title>Career Planning Automation</title><link rel="icon" href="/favicon.png" type="image/x-icon"><script>window.routerBase = "/";</script></head><body><noscript>Out-of-the-box mid-stage front/design solution!</noscript><div id="root"><style>.page-loading-warp {
-          padding: 120px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .ant-spin {
-          -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-          margin: 0;
-          padding: 0;
-          color: rgba(0, 0, 0, 0.65);
-          font-size: 14px;
-          font-variant: tabular-nums;
-          line-height: 1.5;
-          list-style: none;
-          -webkit-font-feature-settings: 'tnum';
-          font-feature-settings: 'tnum';
-          position: absolute;
-          display: none;
-          color: #1890ff;
-          text-align: center;
-          vertical-align: middle;
-          opacity: 0;
-          -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
-          transition: -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
-          transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
-          transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86),
-            -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
-        }
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
 
-        .ant-spin-spinning {
-          position: static;
-          display: inline-block;
-          opacity: 1;
-        }
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .ant-spin-dot {
-          position: relative;
-          display: inline-block;
-          font-size: 20px;
-          width: 20px;
-          height: 20px;
-        }
+</head>
 
-        .ant-spin-dot-item {
-          position: absolute;
-          display: block;
-          width: 9px;
-          height: 9px;
-          background-color: #1890ff;
-          border-radius: 100%;
-          -webkit-transform: scale(0.75);
-          -ms-transform: scale(0.75);
-          transform: scale(0.75);
-          -webkit-transform-origin: 50% 50%;
-          -ms-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-          opacity: 0.3;
-          -webkit-animation: antSpinMove 1s infinite linear alternate;
-          animation: antSpinMove 1s infinite linear alternate;
-        }
+<style>
 
-        .ant-spin-dot-item:nth-child(1) {
-          top: 0;
-          left: 0;
-        }
+body {
+	background-attachment: fixed;
+	color: #333;
+}
 
-        .ant-spin-dot-item:nth-child(2) {
-          top: 0;
-          right: 0;
-          -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-        }
+.box {
+	border-radius: 3px;
+	background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
+}
 
-        .ant-spin-dot-item:nth-child(3) {
-          right: 0;
-          bottom: 0;
-          -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-        }
+.lightbox {
+	zoom: 1.5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(10, 10, 10, 0.8);
+	text-align: center;
+	margin: auto;
 
-        .ant-spin-dot-item:nth-child(4) {
-          bottom: 0;
-          left: 0;
-          -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-        }
+}
 
-        .ant-spin-dot-spin {
-          -webkit-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-          -webkit-animation: antRotate 1.2s infinite linear;
-          animation: antRotate 1.2s infinite linear;
-        }
+div.horizontal {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+}
 
-        .ant-spin-lg .ant-spin-dot {
-          font-size: 32px;
-          width: 32px;
-          height: 32px;
-        }
+div.vertical {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
 
-        .ant-spin-lg .ant-spin-dot i {
-          width: 14px;
-          height: 14px;
-        }
+::-webkit-input-placeholder {
+   color: #955;
+   text-align: center;
+}
 
-        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-          .ant-spin-blur {
-            background: #fff;
-            opacity: 0.5;
-          }
-        }
+::-moz-placeholder {
+   color: #955;
+   text-align: center;
+}
 
-        @-webkit-keyframes antSpinMove {
-          to {
-            opacity: 1;
-          }
-        }
+:-ms-input-placeholder {
+   color: #955;
+   text-align: center;
+}
 
-        @keyframes antSpinMove {
-          to {
-            opacity: 1;
-          }
-        }
+</style>
 
-        @-webkit-keyframes antRotate {
-          to {
-            -webkit-transform: rotate(405deg);
-            transform: rotate(405deg);
-          }
-        }
+<body>
 
-        @keyframes antRotate {
-          to {
-            -webkit-transform: rotate(405deg);
-            transform: rotate(405deg);
-          }
-        }</style><div class="page-loading-warp"><div class="ant-spin ant-spin-lg ant-spin-spinning"><span class="ant-spin-dot ant-spin-dot-spin"><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i></span></div></div></div><script src="/umi.95823554.js"></script></body></html>
+	<div id="loginbox" class="lightbox" >
+		<div class="horizontal">
+			<div class="vertical">
+				<div class="box">
+					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
+					<button id="loginbutton" type="button">Enter</button>
+					<p id="wrongPassword" style="display: none">wrong password</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+
+	 <script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
+
+	<script type="text/javascript">
+	"use strict";
+
+
+	function loadPage(pwd) {
+
+		var hash= pwd;
+		hash= Sha1.hash(pwd);
+		var url= hash + "/index.html";
+
+		$.ajax({
+			url : url,
+			dataType : "html",
+			success : function(data) {
+
+				window.location= url;
+
+			},
+			error : function(xhr, ajaxOptions, thrownError) {
+
+
+				parent.location.hash= hash;
+
+				//$("#wrongPassword").show();
+				$("#password").attr("placeholder","wrong password");
+				$("#password").val("");
+			}
+		});
+	}
+
+
+	$("#loginbutton").on("click", function() {
+		loadPage($("#password").val());
+	});
+	$("#password").keypress(function(e) {
+		if (e.which == 13) {
+
+			loadPage($("#password").val());
+		}
+	});
+	$("#password").focus();
+
+	</script>
+
+</body>
+</html>
